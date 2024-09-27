@@ -1,38 +1,41 @@
-import { RouterProvider } from 'react-router-dom';
+import { RouterProvider } from "react-router-dom";
 
 // routing
-import router from 'routes';
+import router from "routes";
 
 // project imports
-import Locales from 'ui-component/Locales';
-import NavigationScroll from 'layout/NavigationScroll';
-import Snackbar from 'ui-component/extended/Snackbar';
-import Notistack from 'ui-component/third-party/Notistack';
+import Locales from "ui-component/Locales";
+import NavigationScroll from "layout/NavigationScroll";
+import Snackbar from "ui-component/extended/Snackbar";
+import Notistack from "ui-component/third-party/Notistack";
+import RTLLayout from "ui-component/RTLLayout";
 
-import ThemeCustomization from 'themes';
+import ThemeCustomization from "themes";
 
 // auth provider
-import { JWTProvider as AuthProvider } from 'contexts/JWTContext';
+import { JWTProvider as AuthProvider } from "contexts/JWTContext";
 
 // ==============================|| APP ||============================== //
 
 const App = () => {
-    return (
-        <ThemeCustomization>
-            <Locales>
-                <NavigationScroll>
-                    <AuthProvider>
-                        <>
-                            <Notistack>
-                                <RouterProvider router={router} />
-                                <Snackbar />
-                            </Notistack>
-                        </>
-                    </AuthProvider>
-                </NavigationScroll>
-            </Locales>
-        </ThemeCustomization>
-    );
+  return (
+    <ThemeCustomization>
+      <RTLLayout>
+        <Locales>
+          <NavigationScroll>
+            <AuthProvider>
+              <>
+                <Notistack>
+                  <RouterProvider router={router} />
+                  <Snackbar />
+                </Notistack>
+              </>
+            </AuthProvider>
+          </NavigationScroll>
+        </Locales>
+      </RTLLayout>
+    </ThemeCustomization>
+  );
 };
 
 export default App;

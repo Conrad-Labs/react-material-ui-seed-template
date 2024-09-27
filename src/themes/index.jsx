@@ -15,8 +15,11 @@ import componentStyleOverrides from './compStyleOverride';
 import customShadows from './shadows';
 
 export default function ThemeCustomization({ children }) {
+
+    // uses usecontext to maintain cofig variables
     const { borderRadius, fontFamily, mode, outlinedFilled, presetColor, themeDirection } = useConfig();
 
+    // caches the values that pallette calculates based on the dependancies of mode and presetcolor, 
     const theme = useMemo(() => Palette(mode, presetColor), [mode, presetColor]);
 
     const themeTypography = useMemo(() => Typography(theme, borderRadius, fontFamily), [theme, borderRadius, fontFamily]);
@@ -48,7 +51,9 @@ export default function ThemeCustomization({ children }) {
     );
 
     return (
+        // StyledEngineProvider: allows to inject the MUI b4 global css style sheet allowing for global css to overide MUI
         <StyledEngineProvider injectFirst>
+            
             <ThemeProvider theme={themes}>
                 <CssBaseline enableColorScheme />
                 {children}

@@ -23,8 +23,8 @@ const RTLLayout = ({ children }) => {
 
     const cacheRtl = createCache({
         key: themeDirection === ThemeDirection.RTL ? 'rtl' : 'css',
-        prepend: true,
-        stylisPlugins: themeDirection === ThemeDirection.RTL ? [rtlPlugin] : []
+        prepend: true,      //new styles are added on top of the previous caches so can overide default styles
+        stylisPlugins: themeDirection === ThemeDirection.RTL ? [rtlPlugin] : [] //plugins that can transform css b4 being added to cache, 
     });
 
     return <CacheProvider value={cacheRtl}>{children}</CacheProvider>;

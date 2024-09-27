@@ -1,5 +1,5 @@
 // material-ui
-import { createTheme } from '@mui/material/styles';
+import { alpha, createTheme } from '@mui/material/styles';
 
 // project imports
 import { ThemeMode } from 'config';
