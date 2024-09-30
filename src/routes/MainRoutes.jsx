@@ -14,6 +14,8 @@ const UtilsAnimation = Loadable(
   lazy(() => import("views/utilities/Animation"))
 );
 const UtilsGrid = Loadable(lazy(() => import("views/utilities/Grid")));
+const DataGridBasic = Loadable(lazy(()=> import('views/forms/data-grid/DataGridBasic')))
+
 
 // sample page routing
 const SamplePage = Loadable(lazy(() => import("views/sample-page")));
@@ -56,6 +58,10 @@ const MainRoutes = {
       path: "/utils/util-grid",
       element: <UtilsGrid />,
     },
+    {
+      path: '/data-grid/data-grid-basic',
+      element: <DataGridBasic />
+  },
   ],
 };
 
