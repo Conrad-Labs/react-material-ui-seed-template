@@ -56,6 +56,8 @@ The `ConfigProvider` component defines several functions to update the UI: `onCh
 7. `presetColor`: Set the preset color set in scss file in [assets/scss](/src/assets/scss/)
 8. `i18n`: Language used. Current support for English, Fracois, Romanian and Chinese (Simplified).
 9. `themeDirection`: Provided Right to Left orientation (needs to be removed)
+
+
 The `ConfigProvider` component also defines a `onReset` function that resets the configuration settings to their default values.
 
 The initial values of all config parameters are set in [config.js](/src/config.js). Additional information about setting themes can be found in [Themes](/docs/Themes.md)
