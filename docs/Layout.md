@@ -95,3 +95,8 @@ To create your own menu items, follow the above structure in file in [menu-items
 
 
 [MainLayout](/src/layout/MainLayout/) is imported in [MainRoutes](/src/routes/MainRoutes.jsx) and used as the base of the webpage.
+
+---
+## [MinimalLayout](/src/layout/MinimalLayout/)
+
+Blank pages with minimal elements such as Auth pages or maintanence pages are wrapped in MinimalLayout. Outlet here renders child routes. 
