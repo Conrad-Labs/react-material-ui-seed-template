@@ -6,6 +6,8 @@ This documentation provides an overview of the routing files used in the project
 
 The `index.jsx` file is responsible for creating the browser router and combining the main, login, and authentication routes. It imports the `createBrowserRouter` function from `react-router-dom` and the route objects from `MainRoutes.jsx`, `LoginRoutes.jsx`, and `AuthenticationRoutes.jsx`. The `createBrowserRouter` function is then called with an array of the route objects and the `basename` property, which specifies the base URL for the application. 
 
+The base URL ENV key is `VITE_APP_BASE_NAME`
+
 ## [`MainRoutes.jsx`](/src/routes/MainRoutes.jsx)
 
 The `MainRoutes.jsx` file defines the main routing configuration for the application. All routes here are children of [MainLayout](/src/layout/MainLayout/) and wrapped in [AuthGuard](/src/utils/route-guard/AuthGuard.jsx) ([docs](/docs/Guards.md)). Each element has the following attributes:
