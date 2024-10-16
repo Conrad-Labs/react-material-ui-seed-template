@@ -90,3 +90,8 @@ To create your own menu items, follow the above structure in file in [menu-items
 
 [MenuList](/src/layout/MainLayout/MenuList/) is wrapped in [HorizontalBar](/src/layout/MainLayout/HorizontalBar.jsx) or [SideBar](/src/layout/MainLayout/Sidebar/) depending on the orientation and displayed in [index](/src/layout/MainLayout/index.jsx)
 
+
+---
+
+
+[MainLayout](/src/layout/MainLayout/) is imported in [MainRoutes](/src/routes/MainRoutes.jsx) and used as the base of the webpage.
