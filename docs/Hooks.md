@@ -2,7 +2,7 @@
 
 ## 1. [`useAuth`](/src/hooks/useAuth.js)
 
-The `useAuth` hook is used to access the authentication context. It provides a convenient way to retrieve the authentication state and functions without having to manually use the `useContext` hook.
+The `useAuth` hook is used to access the authentication context created in [JWTContext](/src/contexts/JWTContext.jsx). It provides a convenient way to retrieve the authentication state and functions without having to manually use the `useContext` hook.
 
 ### Usage
 
@@ -16,14 +16,14 @@ login(email,password);
 logout();
 register(email, password, firstName, lastName);
 
-user.firstName, user.LastName ...
+user.firstName, user.lastName ...
 ```
 
-Note: `user` object is set by the login function according to the user returned by backend.
+Note: `user` object is set by the login function according to the user returned by backend so attributes may vary.
 
 ## 2. [`useConfig`](/src/hooks/useConfig.js)
 
-The `useConfig` hook is used to access the configuration context. It provides a simple way to retrieve configuration settings without having to manually use the `useContext` hook.
+The `useConfig` hook is used to access the configuration context created in [ConfigContext](/src/contexts/ConfigContext.jsx). It provides a simple way to retrieve configuration settings without having to manually use the `useContext` hook.
 
 ### Usage
 

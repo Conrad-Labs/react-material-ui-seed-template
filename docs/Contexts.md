@@ -10,23 +10,17 @@ The JWTContext.jsx file contains the user auth logic api requests. The localStor
 **Description**:
 The `login` function takes the email and password to make an api request to the backend. It then dispatches the [LOGIN](/src/store/actions.js) action to update the [account slice](/src/store/accountReducer.js) with user state. It also sets the axios header with the auth session token.
 
-
-
 #### 2. `register(email, password, firstName, lastName)`
 
 **Description**:
 The register fucntion sends an api request to register a user. It then updates the users array in local storage to add the newly registered user.
 
-
-#### 3. `register(email, password, firstName, lastName)`
-
-**Description**:
-The register fucntion sends an api request to register a user. It then updates the users array in local storage to add the newly registered user.
-
-#### 4. `logout`
+#### 3. `logout`
 
 **Description**:
 The logout function dispatches the [LOGOUT](/src/store/actions.js) actions to the [accountReducer](/src/store/accountReducer.js). It also deletes the session token.
+
+You can also access the `user` object returned by the backend.
 
 ---
 
@@ -61,3 +55,7 @@ The `ConfigProvider` component defines several functions to update the UI: `onCh
 The `ConfigProvider` component also defines a `onReset` function that resets the configuration settings to their default values.
 
 The initial values of all config parameters are set in [config.js](/src/config.js). Additional information about setting themes can be found in [Themes](/docs/Themes.md)
+
+---
+
+To know more about how to access attributes from ConfigContext and JWTContext see [Hooks](/docs/Hooks.md).
