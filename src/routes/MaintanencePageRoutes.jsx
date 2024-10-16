@@ -13,7 +13,7 @@ const MaintenanceUnderConstruction = Loadable(lazy(() => import('views/pages/mai
 
 // ==============================|| AUTHENTICATION ROUTING ||============================== //
 
-const AuthenticationRoutes = {
+const MaintanencePageRoutes = {
     path: '/',
     element: <MinimalLayout />,
     children: [
@@ -40,4 +40,4 @@ const AuthenticationRoutes = {
     ]
 };
 
-export default AuthenticationRoutes;
+export default MaintanencePageRoutes;
