@@ -62,9 +62,9 @@ Further docs can be found [here](/docs/)
 │   │   └── utilities.jsx
 │   ├── reportWebVitals.jsx
 │   ├── routes
-│   │   ├── AuthenticationRoutes.jsx
 │   │   ├── LoginRoutes.jsx
 │   │   ├── MainRoutes.jsx
+│   │   ├── MaintanencePageRoutes.jsx
 │   │   └── index.jsx
 │   ├── serviceWorker.jsx
 │   ├── store
@@ -109,3 +109,18 @@ Further docs can be found [here](/docs/)
 ├── vite.config.mjs
 └── yarn.lock
 ```
+
+
+# Docs
+
+- [Auth Forms](./docs/Auth%20Forms.md)
+- [Contexts](./docs/Contexts.md)
+- [Guards](./docs/Guards.md)
+- [Hooks](./docs/Hooks.md)
+- [Layout](./docs/Layout.md)
+- [Routes](./docs/Routes.md)
+- [Store](./docs/StoreDocs.md)
+- [Themes](./docs/Themes.md)
+- [ThemesConfig](./docs/ThemesConfig.md)
+- [UI Components](./docs/UI%20Components.md)
+- [Widgets](./docs/Widgets.md)
