@@ -176,7 +176,7 @@ Example Usage can be seen in [Localization](/src/layout/MainLayout/Header/Locali
 
 ### NotiStack
 
-This directory implements the stackable notistack notification library with several customizations. 
+This directory implements the stackable [notistack](https://notistack.com/) notification library with several customizations. 
 
 Example Usage can be seen at [UISnackbar](/src/views/ui-elements/advance/UISnackbar.jsx)
 
