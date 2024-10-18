@@ -116,3 +116,138 @@ Can be viewed in the app at: [base url]/advance/skeleton
 The `TotalIncomeCard` component is a skeleton card that can be used as a placeholder for a total income card. It includes placeholders for the income icon, title, and value.
 
 Can be viewed in the app at: [base url]/advance/skeleton
+
+## [Extended](/src/ui-component/extended/)
+
+### [`AnimateButton`](/src/ui-component/extended/AnimateButton.jsx)
+
+The `AnimateButton` component is a higher-order component that adds animation to a button. It accepts several props that allow for customization of the animation type, direction, offset, and scale. The component uses the `motion` component from the `framer-motion` library to add animation to the button.
+
+It takes the following as parameters:
+1. `direction`: direction of motion/animation. Can be either `up`, `down`, `left` and `right`.
+2. `type`: type of motion. Can be either `rotate`, `slide` or `scale`.
+
+Example usage can be found in [Button](/src/views/forms/components/Button.jsx)
+
+### [`Accordion`](/src/ui-component/extended/Accordion.jsx)
+
+The `Accordion` component is a customizable accordion component that can be used to display a list of items with expandable content. It accepts several props that allow for customization of the data, default expanded item, expand icon, square style, and toggle behavior. The component uses the `Accordion` component from Material-UI to render the accordion.
+
+Usage can be seen in [UIAccordion](/src/views/ui-elements/basic/UIAccordion.jsx)
+Component can be viewed in app at [base url]/basic/accordion
+
+### [`Avatar`](/src/ui-component/extended/Avatar.jsx)
+
+The `Avatar` component is a customizable avatar component that can be used to display user profile pictures. The component uses the `Avatar` component from Material-UI to render the avatar. 
+
+Example usage can be found at [UserDetailsCard](/src/ui-component/cards/UserDetailsCard.jsx)
+
+
+### [`Chip`](/src/ui-component/extended/Chip.jsx)
+
+The `Chip` component is a customizable chip component that can be used to display labels or tags. It accepts several props that allow for customization of the chip color, variant, and disabled state. It swtiches its colour based on the categories of colours which are defined in [Chip](/src/ui-component/extended/Chip.jsx) The component uses the `Chip` component from Material-UI to render the chip.
+
+Example usage can be found at [NotificationList](/src/layout/MainLayout/Header/NotificationSection/NotificationList.jsx)
+
+### [`Breadcrumbs`](/src/ui-component/extended/Breadcrumbs.jsx)
+
+The `Breadcrumbs` component is a customizable breadcrumbs component that can be used to display the current location within a website. It accepts several props that allow for customization of the card style, custom location, divider, heading, icon, icons, links, max items, right alignment, separator, title, and title bottom position. The component uses the `Breadcrumbs` component from Material-UI to render the breadcrumbs.
+
+Rendered Component can be viewed at [base url]/basic/breadcrumb
+
+### [`Snackbar`](/src/ui-component/extended/Snackbar.jsx)
+
+The `Snackbar` component is a customizable snackbar component that can be used to display notifications to the user. You can customize the snackbar properties using the [Snack Bar store](/src/store/slices/snackbar.js). The component uses the `Snackbar` component from Material-UI to render the snackbar. The snackbar component is wrapped around all the routes in [App](/src/App.jsx).
+
+Rendered Component can be viewed at [base url]/advance/snackbar
+Example usage can be found at [UISnakbar](/src/views/ui-elements/advance/UISnackbar.jsx)
+
+###### Flow: 
+Alerts originate from the [store](/src/store/slices/snackbar.js). The openSnackbar action is dispatched with the relevant payload and triggers the [Snackbar](/src/ui-component/extended/Snackbar.jsx) to display the alert.
+
+
+
+
+### [`Transitions`](/src/ui-component/extended/Transitions.jsx)
+
+The `Transitions` component is a customizable transitions component that can be used to add animation to elements. It accepts several props that allow for customization of the transition type, position, and direction. The component uses the `Collapse`, `Fade`, `Grow`, `Slide`, and `Zoom` components from Material-UI to render the transitions.
+
+Example Usage can be seen in [Localization](/src/layout/MainLayout/Header/LocalizationSection/index.jsx) which renders the localization menu in the header. 
+
+### NotiStack
+
+This directory implements the stackable notistack notification library with several customizations. 
+
+Example Usage can be seen at [UISnackbar](/src/views/ui-elements/advance/UISnackbar.jsx)
+
+Rendered Components can be seen at: [base url]/advance/snackbar
+
+#### [`CustomComponent`](/src/ui-component/extended/notistack/CustomComponent.jsx)
+
+The `CustomComponent` component is a custom snackbar component that displays a card with a message and an expandable section. It uses the `enqueueSnackbar` function from the `notistack` library to display the snackbar.
+
+#### [`ColorVariants`](/src/ui-component/extended/notistack/ColorVariants.jsx)
+
+The `ColorVariants` component displays a set of buttons with different color variants. It uses the `enqueueSnackbar` function from the `notistack` library to display a snackbar with the selected color variant.
+
+#### [`HideDuration`](/src/ui-component/extended/notistack/HideDuration.jsx)
+
+The `HideDuration` component displays a slider that allows the user to set the duration for which a snackbar is displayed. It uses the `enqueueSnackbar` function from the `notistack` library to display a snackbar with the selected duration.
+
+#### [`DismissSnackBar`](/src/ui-component/extended/notistack/DismissSnackBar.jsx)
+
+The `DismissSnackBar` component displays a set of buttons that allow the user to simulate a connection loss and then reconnect. It uses the `enqueueSnackbar` and `closeSnackbar` functions from the `notistack` library to display and dismiss the snackbar.
+
+#### [`Dense`](/src/ui-component/extended/notistack/Dense.jsx)
+
+The `Dense` component displays a checkbox that allows the user to enable or disable dense margins for snackbars. It uses the `enqueueSnackbar` function from the `notistack` library to display a snackbar with the selected margin setting.
+
+#### [`IconVariants`](/src/ui-component/extended/notistack/IconVariants.jsx)
+
+The `IconVariants` component displays a set of radio buttons that allow the user to select an icon variant for snackbars. It uses the `enqueueSnackbar` function from the `notistack` library to display a snackbar with the selected icon variant.
+
+#### [`MaxSnackbar`](/src/ui-component/extended/notistack/MaxSnackbar.jsx)
+
+The `MaxSnackbar` component displays a set of buttons that allow the user to set the maximum number of snackbars that can be displayed at once. It uses the `enqueueSnackbar` function from the `notistack` library to display snackbars with the selected maximum number.
+
+#### [`PositioningSnackbar`](/src/ui-component/extended/notistack/PositioningSnackbar.jsx)
+
+The `PositioningSnackbar` component displays a set of buttons that allow the user to display snackbars at different positions on the screen. It uses the `enqueueSnackbar` function from the `notistack` library to display snackbars at the selected position.
+
+#### [`PreventDuplicate`](/src/ui-component/extended/notistack/PreventDuplicate.jsx)
+
+The `PreventDuplicate` component displays a checkbox that allows the user to enable or disable duplicate snackbar prevention. It uses the `enqueueSnackbar` function from the `notistack` library to display snackbars with the selected duplicate prevention setting.
+
+#### [`TransitionBar`](/src/ui-component/extended/notistack/TransitionBar.jsx)
+
+The `TransitionBar` component displays a set of radio buttons that allow the user to select a transition animation for snackbars. It uses the `enqueueSnackbar` function from the `notistack` library to display snackbars with the selected transition animation.
+
+#### [`SnackBarAction`](/src/ui-component/extended/notistack/SnackBarAction.jsx)
+
+The `SnackBarAction` component displays a button that displays a snackbar with action buttons. It uses the `enqueueSnackbar` and `closeSnackbar` functions from the `notistack` library to display and dismiss the snackbar.
+
+### [Forms](/src/ui-component/extended/Form/)
+
+#### `FormControl`
+
+The `FormControl` component is a customizable form control component that can be used to display input fields with labels, icons, and adornments. It accepts several props that allow for customization of the caption label, form state, primary and secondary icons, placeholder, and primary and secondary text. The component uses the `InputLabel`, `OutlinedInput`, and `InputAdornment` components from Material-UI to render the form control.
+
+Example Usage can be found at [TextField](/src/views/forms/components/TextField.jsx)
+
+Rendered component can be found at [base url]/components/text-field
+
+#### [`FormControlSelect`](/src/views/forms/components/TextField.jsx)
+
+The `FormControlSelect` component is a customizable form control component that can be used to display a select input field with labels, icons, and adornments. It accepts several props that allow for customization of the caption label, currencies, form state, primary and secondary icons, selected value, and primary and secondary text. The component uses the `TextField`, `MenuItem`, and `InputAdornment` components from Material-UI to render the form control.
+
+Example Usage can be found at [TextField](/src/views/forms/components/TextField.jsx)
+
+Rendered component can be found at [base url]/components/text-field
+
+#### [`InputLabel`](/src/ui-component/extended/Form/InputLabel.jsx)
+
+The `InputLabel` component is a customizable input label component that can be used to display labels for input fields. It accepts several props that allow for customization of the horizontal alignment of the label. The component uses the `InputLabel` component from Material-UI to render the label.
+
+Example Usage can be found at [ActionBar](/src/views/forms/layouts/ActionBar.jsx)
+
+Rendered component can be found at [base url]/forms/layouts/action-bar
