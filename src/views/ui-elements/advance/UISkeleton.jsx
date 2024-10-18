@@ -17,12 +17,12 @@ const UISkeleton = () => (
     <MainCard title="Skeleton" secondary={<SecondaryAction link="https://next.material-ui.com/components/skeleton/" />}>
         <Grid container spacing={gridSpacing}>
             <Grid item xs={12} md={6}>
-                <SubCard title="Example  1">
+                <SubCard title="Skeleton EarningCard">
                     <SkeletonEarningCard />
                 </SubCard>
             </Grid>
             <Grid item xs={12} md={6}>
-                <SubCard title="Example 2">
+                <SubCard title="Skeleton TotalIncomeCard">
                     <Grid container spacing={gridSpacing}>
                         <Grid item xs={12}>
                             <SkeletonTotalIncomeCard />
@@ -34,12 +34,12 @@ const UISkeleton = () => (
                 </SubCard>
             </Grid>
             <Grid item xs={12} sm={12} md={8}>
-                <SubCard title="Example 3">
+                <SubCard title="Skeleton TotalGrowthBarChart">
                     <SkeletonChartCard />
                 </SubCard>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-                <SubCard title="Example 4">
+                <SubCard title="Skeleton PopularCard">
                     <SkeletonPopularCard />
                 </SubCard>
             </Grid>
