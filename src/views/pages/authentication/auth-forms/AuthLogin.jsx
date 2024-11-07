@@ -53,7 +53,7 @@ const JWTLogin = ({ loginProp, ...others }) => {
         <Formik
             initialValues={{
                 email: 'awais.kamran@conradlabs.com',
-                password: '123456',
+                password: 'secret',
                 submit: null
             }}
             validationSchema={Yup.object().shape({
