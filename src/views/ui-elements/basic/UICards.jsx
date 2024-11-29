@@ -86,27 +86,27 @@ const UICards = () => {
             <MainCard title="Cards" secondary={<SecondaryAction link="https://next.material-ui.com/components/cards/" />}>
                 <Grid container spacing={gridSpacing}>
                     <Grid item xs={12} lg={4}>
-                        <SubCard title="Basic Card Style 3">
+                        <SubCard title="UserSimpleCard">
                             <UserSimpleCard {...simpleCard} />
                         </SubCard>
                     </Grid>
                     <Grid item xs={12} lg={4}>
-                        <SubCard title="Basic Card Style 4">
+                        <SubCard title="FriendsCard">
                             <FriendsCard {...friend} />
                         </SubCard>
                     </Grid>
                     <Grid item xs={12} lg={4}>
-                        <SubCard title="Basic Card Style 5">
+                        <SubCard title="FollowerCard">
                             <FollowerCard {...follower} />
                         </SubCard>
                     </Grid>
                     <Grid item xs={12} lg={4}>
-                        <SubCard title="Basic Card Style 1">
+                        <SubCard title="UserDetailedCard">
                             <UserDetailsCard {...userDetails} />
                         </SubCard>
                     </Grid>
                     <Grid item xs={12} lg={4}>
-                        <SubCard title="Basic Card Style 2">
+                        <SubCard title="UserProfileCard">
                             <UserProfileCard {...userProfile} />
                         </SubCard>
                     </Grid>
